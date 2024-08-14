@@ -25,7 +25,7 @@ Dependencies:
 + README.md: this file.
 + data: The datasets used in paper.
 	+ **Systems biology dataset**: Construct a heterogeneous network related to drug-target pairs
- 		+** Dataset_KB**：	all *.csv files in DrugKB folder	
+ 		+ **Dataset_KB**：	all *.csv files in DrugKB folder	
    		+ **Dataset_Yamanishi**: 	drug_smiles.csv + protein_fasta.csv + drug_drug.csv + protein_protein.csv + drug_protein.csv
   	+ **Structural biology dataset**：They are used as input for training the model.
   		+ **DrugBank**:	DrugBank35022.txt
