@@ -1,8 +1,7 @@
-# HpyerAttentionDTI
-HyperAttentionDTI: improving drug–protein interaction prediction by sequence-based deep learning with attention mechanism
-This repository contains the source code and the data.
+# SSGraphDTI
+SSGraphDTI: integrating structural and systems biology features to enhance drug-target relationship prediction performance
 
-## HpyerAttentionDTI
+## SSGraphDTI
 
 <div align="center">
 <p><img src="model.jpg" width="600" /></p>
@@ -11,42 +10,38 @@ This repository contains the source code and the data.
 ## Setup and dependencies 
 
 Dependencies:
-- python 3.6
-- pytorch >=1.2
+- python 3.9.16
+- pytorch >=1.12
+- pyg	2.2.0
+- rdkit	2022.9.5
 - numpy
 - sklearn
 - tqdm
 - tensorboardX
 - prefetch_generator
+- matplotlib
 
 ## Resources:
 + README.md: this file.
 + data: The datasets used in paper.
-	+ DrugBank.txt:  
-	+ KIBA.txt: 
-	+ Davis.txt
-	In the directory of data, we now have the original data "DrugBank/KIBA/Davis.txt" as follows:
+	+ Systems biology dataset: Construct a heterogeneous network related to drug-target pairs
+ 		+ Dataset_KB：	all *.csv files in DrugKB folder	
+   		+ Dataset_Yamanishi: 	drug_smiles.csv + protein_fasta.csv + drug_drug.csv + protein_protein.csv + drug_protein.csv
+  	+ Structural biology dataset：They are used as input for training the model.
+  		+ DrugBank:	DrugBank35022.txt
+  	 	+ Dataset_in_net:DrugBank7710.txt
+  	  	+ dataset after remove related data:new7710.txt
+  	  	+ Dataset_out_net:out_net_data.txt
+  	  	+ Dataset_less:DrugBank2570.txt
 
-	```
-	Drug_ID Protein_ID Drug_SMILES Amino_acid_sequence interaction
-	DB00303 P45059 [H][C@]12[C@@H]... MVKFNSSRKSGKSKKTIRKLT... 1
-	DB00114 P19113 CC1=NC=C(COP(O)... MMEPEEYRERGREMVDYICQY... 1
-	DB00117 P19113 N[C@@H](CC1=CNC... MMEPEEYRERGREMVDYICQY... 1
-	...
-	...
-	...
-	DB00441 P48050 NC1=NC(=O)N(C=C... MHGHSRNGQAHVPRRKRRNRF... 0
-	DB08532 O00341 FC1=CC=CC=C1C1=... MVPHAILARGRDVCRRNGLLI... 0
-
-	```
 + dataset.py: data process.
-+ HpyerAttentionDTI_main.py: train and test the model.
-+ hyperparameter.py: set the hyperparameter of HpyerAttentionDTI
-+ model.py: HpyerAttentionDTA model architecture
-+ pytorchtools: early stopping
++ hyperparameter.py: set the hyperparameters of SSGraphDTI.
++ model.py: SSGraphDTI model architecture and Read systems biology data.
++ pytorchtools: early stopping.
++ SSGraphDTI.py: train and test the model.
 
 
 
 # Run:
 
-python HpyerAttentionDTI_main.py
+python SSGraphDTI.py
