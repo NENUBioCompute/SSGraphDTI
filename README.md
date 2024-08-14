@@ -1,5 +1,5 @@
 # SSGraphDTI
-SSGraphDTI: integrating structural and systems biology features to enhance drug-target relationship prediction performance
+SSGraphDTI:Operating at the intersection of sequential structural data and network-level interaction insights of drug-target pairs, SSGraphDTI orchestrates a harmonious fusion to drive DTI predictions. On the one hand, the model harnesses a CNN-based architecture to distill sequence features, encapsulating the intrinsic structural characteristics. On the other hand, the incorporation of a GNN-based model adeptly captures the dynamic network attributes of interaction networks linked to the input drug-target pairs. This strategic amalgamation of sequential particulars and network dynamics imparts heightened effectiveness to the feature set, thereby elevating the model's predictive performance.
 
 ## SSGraphDTI
 
