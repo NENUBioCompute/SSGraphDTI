@@ -5,20 +5,20 @@
 <p><img src="model.jpg" width="600" /></p>
 </div>
 
-**SSGraphDTI**:Operating at the intersection of sequential structural data and network-level interaction insights of drug-target pairs, SSGraphDTI orchestrates a harmonious fusion to drive DTI predictions. On the one hand, the model harnesses a CNN-based architecture to distill sequence features, encapsulating the intrinsic structural characteristics. On the other hand, the incorporation of a GNN-based model adeptly captures the dynamic network attributes of interaction networks linked to the input drug-target pairs. This strategic amalgamation of sequential particulars and network dynamics imparts heightened effectiveness to the feature set, thereby elevating the model's predictive performance.
+**SSGraphDTI**: Operating at the intersection of sequential structural data and network-level interaction insights of drug-target pairs, SSGraphDTI orchestrates a harmonious fusion to drive DTI predictions. On the one hand, the model harnesses a CNN-based architecture to distill sequence features, encapsulating the intrinsic structural characteristics. On the other hand, the incorporation of a GNN-based model adeptly captures the dynamic network attributes of interaction networks linked to the input drug-target pairs. This strategic amalgamation of sequential particulars and network dynamics imparts heightened effectiveness to the feature set, thereby elevating the model's predictive performance.
 
 ## Setup and dependencies 
 Dependencies:
-- python 3.9.16
-- pytorch >=1.12
-- pyg	2.2.0
-- rdkit	2022.9.5
-- numpy
-- sklearn
-- tqdm
-- tensorboardX
-- prefetch_generator
-- matplotlib
+- `python 3.9.16`
+- `pytorch >=1.12`
+- `pyg	2.2.0`
+- `rdkit 2022.9.5`
+- `numpy`
+- `sklearn`
+- `tqdm`
+- `tensorboardX`
+- `prefetch_generator`
+- `matplotlib`
 
 ## Resources:
 + README.md: this file.
